@@ -1,3 +1,5 @@
+import User
+
 class AdminUser(User):
 
     def __init__(self, UserName, address, PassWord, Email, AdminName ):
