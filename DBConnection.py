@@ -10,4 +10,7 @@ class DBConnection:
             Config.DATABASE_CONFIG['host'],
             Config.DATABASE_CONFIG['dbName']
             )
+
+    def executeStatement(self, query, params):
+        pass
     

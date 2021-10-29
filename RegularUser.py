@@ -8,4 +8,7 @@ class RegularUser(User):
 
     def changeAccType(self):
         return
+
+    def purchaseGame(self):
+        return
     
