@@ -5,7 +5,7 @@ class Cart:
     def UpdateCart(self):
         pass
 
-    def AddItem(self, item):
+    def AddToCart(self, item):
         self.__itemNames.append(item)
 
     def ProceedToOrder(self):
