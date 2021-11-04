@@ -1,16 +1,7 @@
-import mysql.connector
+from DBManager import DBManager
 
-from config import Config
+databaseConnection = DBManager()
 
-class DBConnection:
-    def __init__(self):
-         self.db=mysql.connector.connect(
-            Config.DATABASE_CONFIG['user'],
-            Config.DATABASE_CONFIG['password'],
-            Config.DATABASE_CONFIG['host'],
-            Config.DATABASE_CONFIG['dbName']
-            )
-
-    def executeStatement(self, query, params):
-        pass
-    
+query = "INSERT INTO games(Gamename,Gameprice,Gamerental,Gamedescription) VALUES(%s, %s, %s, %s)"
+tuple = ("game",50.00, 5.99, "helfe")
+databaseConnection.executeStatement(query, tuple)

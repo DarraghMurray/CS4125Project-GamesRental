@@ -3,13 +3,13 @@ from CartInterface import CartInterface
 
 class User:
     
-    def __init__(self, UserName, address, PassWord, Email ):
+    def __init__(self, UserName, address, PassWord, Email, isPremium ):
         self.__UserName = UserName
         self.__address = address
         self.__creditCardInfo = ""
         self.__PassWord = PassWord
         self.__Email = Email
-        self.IsPremium = False
+        self.IsPremium = isPremium
 
     def verifyLogIn(self):
         return True
