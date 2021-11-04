@@ -6,5 +6,8 @@ class SubscribedUser(User):
         super().__init__(self,UserName,address,PassWord,Email)
         self.__RentalStatus = RentalStatus
 
+    def Rent(self, item):
+        return
+
     def CancelSub(self):
         return
