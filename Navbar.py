@@ -2,8 +2,8 @@ import tkinter as tk
 
 class Navbar(tk.Frame):
     def __init__(self, master):
-        tk.Frame.__init__(self, master, bg="dark gray")
-        #self.grid()
+        tk.Frame.__init__(self, master, bg="dark gray",height="600",width="200")
+        self.grid()
         self.create_widgets()
 
     def create_widgets(self):
@@ -13,8 +13,8 @@ class Navbar(tk.Frame):
         self.buttonLibrary = tk.Button(self, text="Games Library", borderwidth="0",fg="white", bg="dark gray")
         self.buttonSettings = tk.Button(self, text="User Settings", borderwidth="0",fg="white", bg="dark gray")
 
-        #self.buttonReg.grid()
-       # self.buttonLogIn.grid()
-        #self.buttonStore.grid()
-        #self.buttonLibrary.grid()
-        #self.buttonSettings.grid()
+        self.buttonReg.grid()
+        self.buttonLogIn.grid()
+        self.buttonStore.grid()
+        self.buttonLibrary.grid()
+        self.buttonSettings.grid()
