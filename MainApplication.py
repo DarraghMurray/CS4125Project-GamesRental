@@ -9,7 +9,7 @@ class MainApplication(tk.Frame):
         tk.Frame.__init__(self,master)
         self.topbar = Topbar(master)
         self.mainscreen = MainScreen(master)
-        self.navbar = Navbar(master,self.mainscreen)
+        self.navbar = Navbar(master)
         self.navbar.pack( side = LEFT)
         self.topbar.pack( side = TOP)
         self.mainscreen.pack( side = RIGHT)

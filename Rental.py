@@ -1,5 +1,6 @@
 class Rental:
-    def __init__(self, GameName, DaysRemaining, RentedBy):
-        self.__GameName = GameName
-        self.__DaysRemaining = DaysRemaining
-        self.__RentedBy = RentedBy
+    def __init__(self, DaysRented):
+        self.__DaysRented = DaysRented
+
+    def getRentedGames(self):
+        return
