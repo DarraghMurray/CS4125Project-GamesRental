@@ -4,7 +4,8 @@ from StoreItem import StoreItem
 
 
 class Game(StoreItem):
-    def __init__(self, gameName, basePrice, rentalPrice, gameDescription):
+    def __init__(self, gameID, gameName, basePrice, rentalPrice, gameDescription):
+        self.__gameID = gameID
         self.__gameName = gameName
         self.__basePrice = basePrice
         self.__rentalPrice = rentalPrice

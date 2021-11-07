@@ -3,7 +3,8 @@ from CartInterface import CartInterface
 
 class User:
     
-    def __init__(self, UserName, address, PassWord, Email, isPremium ):
+    def __init__(self, UserID, UserName, address, PassWord, Email, isPremium ):
+        self.__UserID = UserID
         self.__UserName = UserName
         self.__address = address
         self.__creditCardInfo = ""
