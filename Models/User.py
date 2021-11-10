@@ -1,5 +1,4 @@
-from CartInterface import CartInterface
-
+from Cart import Cart
 
 class User:
     
@@ -10,6 +9,7 @@ class User:
         self.__creditCardInfo = ""
         self.__PassWord = PassWord
         self.__Email = Email
+        self.__Cart = Cart 
         self.IsPremium = isPremium
 
     def verifyLogIn(self):

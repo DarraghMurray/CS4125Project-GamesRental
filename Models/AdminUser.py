@@ -1,5 +1,6 @@
+
 import User
-from DBConnection import databaseConnection as DC
+from Database.DBConnection import databaseConnection as DC
 
 class AdminUser(User):
 

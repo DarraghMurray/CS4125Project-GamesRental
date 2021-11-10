@@ -2,7 +2,7 @@
 import tkinter as tk
 from tkinter.constants import SOLID, W
 
-class signInUI():
+class LogInUI():
     def __init__(self,master):
         tk.Frame(self,master)
     pass
