@@ -2,9 +2,10 @@ import tkinter as tk
 
 class Navbar(tk.Frame):
     def __init__(self, master):
-        tk.Frame.__init__(self, master, bg="dark gray",height="600",width="200")
-        self.grid()
-        self.create_widgets()
+        tk.Frame.__init__(self, master, bg="dark gray",width=100,height=master.winfo_screenheight())
+        self.grid(row=0,column=0)
+        
+        #self.create_widgets()
 
     def create_widgets(self):
         self.buttonReg = tk.Button(self, text="register", borderwidth="0",fg="white", bg="dark gray")
@@ -18,3 +19,9 @@ class Navbar(tk.Frame):
         self.buttonStore.grid()
         self.buttonLibrary.grid()
         self.buttonSettings.grid()
+
+    def goToRegister():
+        pass
+    
+    def goToSignIn():
+        pass

@@ -11,6 +11,13 @@ class Cart(CartInterface):
     def AddToCart(self, item):
         self.__itemNames.append(item)
 
+    def RemoveFromCart(self, item):
+        if item in self.__itemNames:
+            self.__itemNames.remove(item)
+    
+    def ClearCart(self):
+        self.__itemNames.clear()
+
     def ProceedToOrder(self):
         #calls appropriate methods to begin transaction
         #on successful purchase add to database games library

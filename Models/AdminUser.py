@@ -1,5 +1,6 @@
+
 import User
-from DBConnection import databaseConnection as DC
+from Database.DBConnection import databaseConnection as DC
 
 class AdminUser(User):
 
@@ -17,3 +18,6 @@ class AdminUser(User):
         query = "DELETE FROM games WHERE GameID=%s"
         parameters = (gameID)
         DC.executeStatement(query, parameters)
+
+    def BanUser(userID):
+        pass
