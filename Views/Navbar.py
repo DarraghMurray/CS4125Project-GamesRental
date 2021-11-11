@@ -1,10 +1,8 @@
 import tkinter as tk
 
 class Navbar(tk.Frame):
-    def __init__(self, master):
+    def __init__(self, master,controller):
         tk.Frame.__init__(self, master, bg="dark gray",width=100,height=master.winfo_screenheight())
-        self.grid(row=0,column=0)
-        
         #self.create_widgets()
 
     def create_widgets(self):
