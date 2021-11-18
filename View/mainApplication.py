@@ -9,9 +9,9 @@ class MainApplication(tk.Tk):
         self.title("main")
         self.geometry("600x600")
         self.grid()
-        self.navigator = NavigationController()
-        self.navbar = navbar(self, self.navigator)
         self.mainScreen = mainScreen(self)
+        self.navigator = NavigationController(self.mainScreen)
+        self.navbar = navbar(self, self.navigator)
 
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)

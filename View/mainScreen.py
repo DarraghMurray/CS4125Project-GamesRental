@@ -4,11 +4,14 @@ from View.LogInUI import LogInUI
 class mainScreen(tk.Frame):
     def __init__(self, master):
         tk.Frame.__init__(self,master,bg="black",width=500,height=master.winfo_screenheight())
-        self.loadInit()
+        self.currentFrame = self.loadInitialFrame()
 
     
-    def loadInit(self):
-        self.LogInUI = LogInUI(self)
+    def loadInitialFrame(self) -> tk.Frame:
+        return LogInUI(self)
 
-    def setScreen():
-        return
+    def setCurrentFrame(self, frame) :
+        self.currentFrame = frame
+
+    def loadScreen(self):
+        self.currentFrame(self)
