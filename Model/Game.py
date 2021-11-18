@@ -22,4 +22,4 @@ class Game(StoreItem):
         return self.__basePrice
 
     def getRentalPrice(self) -> float:
-        return self.__releaseState.getPrice()
+        return self.__releaseState.getPrice(self.__baseRentalPrice)
