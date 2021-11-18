@@ -1,16 +1,23 @@
-from View.navbar import navbar
-from View.mainScreen import mainScreen
+from View.LogInUI import LogInUI
+from View.RegisterUI import RegisterUI
+from View.ItemPageUI import ItemPageUI
 
-class NavigationController:
+class NavigationController():
 
+    def __init__(self, mainScreen):
+        self.mainScreen = mainScreen
+        
     def navigateToRegistration(self):
-        pass
+        self.mainScreen.setCurrentFrame(RegisterUI)
+        self.mainScreen.loadScreen()
 
     def navigateToLogIn(self):
-        pass
+        self.mainScreen.setCurrentFrame(LogInUI)
+        self.mainScreen.loadScreen()
 
     def navigateToStore(self):
-        pass
+        self.mainScreen.setCurrentFrame(ItemPageUI)
+        self.mainScreen.loadScreen()
 
     def navigateToLibrary(self):
         pass

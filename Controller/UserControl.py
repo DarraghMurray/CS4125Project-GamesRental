@@ -1,2 +1,7 @@
+
+
+
 class UserControl:
-    pass
+    
+    def __init__(self, user):
+        pass
